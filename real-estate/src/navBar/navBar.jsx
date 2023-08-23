@@ -13,6 +13,7 @@ function Navbar() {
 
     const [open, setOpen] = useState(false);
     const showDrawer = () => {
+        showNavbar(false)
         setOpen(true);
     };
     const onClose = () => {
