@@ -27,6 +27,7 @@ header{
     padding: 0 2rem;
     background-color: var(--mainColor);
     color: var(--secondaryColor);
+    margin-bottom: 1rem;
 }
 .nav-links{
     margin: 0 2rem;
