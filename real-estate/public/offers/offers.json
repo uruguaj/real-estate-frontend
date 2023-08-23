@@ -1,0 +1,63 @@
+[
+  {
+    "id": 0,
+    "price": 100000,
+    "title": "Luxury 10 room villa.",
+    "details": "Best Location in Dubai :)",
+    "rooms": 6,
+    "location": "Adress : Po Box 30681",
+    "image": "./panorama.jpeg",
+    "tag": "top"
+  },
+  {
+    "id": 2,
+    "price": 1321000,
+    "title": "Luxury and modern house. Located in the downtown!",
+    "details": "Luxury and modern house. Located in the downtown. ",
+    "rooms": 3,
+    "location": "Adress:  Box No. 14010",
+    "image": "./panorama.jpeg",
+    "tag": "top"
+  },
+  {
+    "id": 4,
+    "price": 1321000,
+    "title": "2 room flat.",
+    "details": "Cool flat",
+    "rooms": 2,
+    "location": "Adress:  Crystal Lagoon, 1 Street",
+    "image": "./propety.jpeg",
+    "tag": "top"
+  },
+  {
+    "id": 5,
+    "price": 750000,
+    "title": "Modern House",
+    "details": "Spacious and stylish",
+    "rooms": 4,
+    "location": "Address:  3, Claverton Street",
+    "image": "./panorama.jpeg",
+    "tag": "top"
+  },
+  {
+    "id": 6,
+    "price": 980000,
+    "title": "Cozy Cottage",
+    "details": "Quaint cottage in a peaceful setting",
+    "rooms": 2,
+    "location": "Address: 23, Street 3",
+    "image": "./property.jpeg"
+  },
+  {
+    "id": 7,
+    "price": 620000,
+    "title": "Urban Apartment",
+    "details": "Modern apartment with city views",
+    "rooms": 1,
+    "location": "Address:  59, 25c Street",
+    "image": "./panorama.jpeg",
+    "tag": "top"
+  },
+
+}
+]
