@@ -1,10 +1,3 @@
-
-
-
-
-export default function FooterC(){
-    return(
-        <div>
-        </div>
-    )
+export default function FooterC() {
+  return <div></div>;
 }

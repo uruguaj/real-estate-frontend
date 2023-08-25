@@ -2,88 +2,91 @@
 @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
 
-:root{
-    --background:rgba(0,34,68,0.05);
+:root {
+  --background: rgba(0, 34, 68, 0.05);
 }
 
-.top-off-main{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    padding: 0.75rem;
-    margin-bottom: 0.25rem;
+.top-off-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  padding: 0.75rem;
+  margin-bottom: 0.25rem;
 }
-.top-off-title{
-    /*font-family: 'REM', sans-serif;*/
-    font-family: 'Raleway', sans-serif;
-    letter-spacing: 1rem;
-    color: #1a1a1a;
+.top-off-title {
+  /*font-family: 'REM', sans-serif;*/
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 1rem;
+  color: #1a1a1a;
 }
-.top-off{
-    /*width: 100%;*/
-    /*display: flex;*/
+.top-off {
+  /*width: 100%;*/
+  /*display: flex;*/
 }
-.box-front{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /*width: 100%;*/
-    margin-bottom: 1rem !important;
-    background-color: transparent;
+.box-front {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*width: 100%;*/
+  margin-bottom: 1rem !important;
+  background-color: transparent;
 }
-.box-back, .top-off{
-    border-radius: 1.25rem;
-    background-color:rgba(0,34,68,0.01);
+.box-back,
+.top-off {
+  border-radius: 1.25rem;
+  background-color: rgba(0, 34, 68, 0.01);
 
-    /*height: 1rem;*/
+  /*height: 1rem;*/
 }
-.top-off{
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-
+.top-off {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
-.image{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.image-offer{
-    margin: 0;
-    border-radius: 0.5rem;
-    margin-bottom: 1rem;
-    max-height: 20rem;
-}
-
-.top-offer{
-    padding:1rem;
-    margin-left: 10%;
-    margin-right: 10%;
-    color: black;
-    background-color: white;
-    border-radius: 1rem;
+.image-offer {
+  margin: 0;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  max-height: 20rem;
 }
 
-@media screen and (min-width: 600px){
-    .box-front{
-        height: auto !important;
-        padding: 1.25rem;
-    }
+.top-offer {
+  padding: 1rem;
+  margin-left: 10%;
+  margin-right: 10%;
+  color: black;
+  background-color: white;
+  border-radius: 1rem;
 }
-@media screen and (min-width: 950px){
-    .top-offer{
-        margin-left: 25%;
-        margin-right: 25%;
-    }
-    .image-offer{
-        /*width:auto;*/
-        min-width: 80%;
-    }
-    .image-offer{
-        min-height: 15rem;
-    }
+.slick-dots.slick-dots-bottom button {
+  background-color: red !important;
 }
-
-
+@media screen and (min-width: 600px) {
+  .box-front {
+    height: auto !important;
+    padding: 1.25rem;
+  }
+}
+@media screen and (min-width: 950px) {
+  .offer-box {
+    /*width: 50vw ;*/
+  }
+  .top-offer {
+    margin-left: 25%;
+    margin-right: 25%;
+  }
+  .image-offer {
+    /*width:auto;*/
+    min-width: 80%;
+  }
+  .image-offer {
+    min-height: 15rem;
+  }
+}

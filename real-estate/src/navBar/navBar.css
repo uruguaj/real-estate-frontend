@@ -2,132 +2,130 @@
 @import url('https://fonts.googleapis.com/css2?family=Karla&family=Raleway:wght@100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
 
-*{
-    margin: 0;
-    padding: 0;
-    font-family: 'Noto Serif', serif;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Noto Serif', serif;
 }
 
-:root{
-    --mainColor: #fff;
-    --secondaryColor: #1a1a1a;
+:root {
+  --mainColor: #fff;
+  --secondaryColor: #1a1a1a;
 }
 
-.logo{
-
+.logo {
 }
 
-header{
-    margin-top: 0.2rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 80px;
-    font-size: 0.95rem;
-    padding: 0 2rem;
-    background-color: var(--mainColor);
-    color: var(--secondaryColor);
-    margin-bottom: 1rem;
+header {
+  margin-top: 0.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  font-size: 0.95rem;
+  padding: 0 2rem;
+  background-color: var(--mainColor);
+  color: var(--secondaryColor);
+  margin-bottom: 1rem;
 }
-.nav-links{
-    margin: 0 2rem;
-    color: var(--secondaryColor);
-    text-decoration: none;
-}
-
-.nav-links:hover{
-    color: gray;
+.nav-links {
+  margin: 0 2rem;
+  color: var(--secondaryColor);
+  text-decoration: none;
 }
 
-.contact-now{
-    cursor: pointer;
-    position: absolute;
-    left: 5.5rem;
+.nav-links:hover {
+  color: gray;
 }
 
-.nav-button-close{
-    padding: 5px;
-    cursor: pointer;
-    background: transparent;
-    border: none;
-    outline: none;
-    color: var(--secondaryColor);
-    visibility: hidden;
-    opacity: 0;
-    font-size: 1.2rem;
-}
-.nav-button{
-    padding: 5px;
-    cursor: pointer;
-    background: transparent;
-    border: none;
-    outline: none;
-    color: var(--secondaryColor);
-    visibility: hidden;
-    opacity: 0;
-    font-size: 1.2rem;
-
+.contact-now {
+  cursor: pointer;
+  margin-left: 5vw !important;
 }
 
-.form{
-    margin-top: 1rem;
+.nav-button-close {
+  padding: 5px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: var(--secondaryColor);
+  visibility: hidden;
+  opacity: 0;
+  font-size: 1.2rem;
 }
-.contact-input{
-    margin-bottom: 1rem;
+.nav-button {
+  padding: 5px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: var(--secondaryColor);
+  visibility: hidden;
+  opacity: 0;
+  font-size: 1.2rem;
 }
-.drawer-title{
-    text-align: center;
-    font-family: 'Karla', sans-serif;
+
+.form {
+  margin-top: 1rem;
 }
-.drawer-span-text{
-    font-family: 'Karla', sans-serif;
-    letter-spacing: 0.15rem;
+.contact-input {
+  margin-bottom: 1rem;
 }
-.submit{
-    display: flex;
-    justify-content: center;
+.drawer-title {
+  text-align: center;
+  font-family: 'Karla', sans-serif;
+}
+.drawer-span-text {
+  font-family: 'Karla', sans-serif;
+  letter-spacing: 0.15rem;
+}
+.submit {
+  display: flex;
+  justify-content: center;
 }
 @media only screen and (max-width: 950px) {
-    .nav-button-close{
-        visibility: visible;
-        opacity: 1;
-    }
-    .nav-button{
-        visibility: visible;
-        opacity: 1;
-    }
-    header nav{
-        font-size: 1.1rem;
-        position: fixed;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 1.5rem;
-        background-color: var(--mainColor);
-        z-index: 999;
-        transition: 0.6s;
-        transform: translateY(-100vh);
-        flex-direction: column;
-    }
-    header .responsiveNav{
-        transform: none;
-    }
-    .nav-button-close{
-        position: absolute;
-        top: 2rem;
-        right: 2rem;
-    }
-    .contact-now{
+  .contact-now {
+    margin-left: 0 !important;
+  }
+  .nav-button-close {
+    visibility: visible;
+    opacity: 1;
+  }
+  .nav-button {
+    visibility: visible;
+    opacity: 1;
+  }
+  header nav {
+    font-size: 1.1rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    background-color: var(--mainColor);
+    z-index: 999;
+    transition: 0.6s;
+    transform: translateY(-100vh);
+    flex-direction: column;
+  }
+  header .responsiveNav {
+    transform: none;
+  }
+  .nav-button-close {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+  }
+  .contact-now {
+    left: 0;
+  }
 
-        left: 0;
-    }
-
-    .nav-links{
-        border-bottom: 0.2px solid rgba(0,0,0,0.1);
-    }
-
+  .nav-links {
+    border-bottom: 0.2px solid rgba(0, 0, 0, 0.1);
+  }
 }
