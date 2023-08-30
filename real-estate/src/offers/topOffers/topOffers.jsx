@@ -1,5 +1,5 @@
 import NavBar from '../../navBar/navBar.jsx';
-import { Carousel, Divider, Image, Tag } from 'antd';
+import {Button, Carousel, Divider, Image, Tag} from 'antd';
 import axios from 'axios';
 import './topOffers.css';
 import { useEffect, useState } from 'react';
@@ -27,7 +27,7 @@ export default function TopOffers() {
         <h2 className="top-off-title">Top Offers</h2>
         <Divider />
       </div>
-      <div className="top-off">
+      <div className="top-off on-mobile">
         <Carousel autoplay>
           {topOffers.map((offer) => (
             <div key={offer} className="box-back">
@@ -38,12 +38,12 @@ export default function TopOffers() {
                       <div className="image">
                         <Image preview={false} key={offer.id} src={offer.image} alt="img" className="image-offer" />
                       </div>
-                      <div>{offer.title}</div>
+                      <div> {offer.title}</div>
                       <div>{offer.details}</div>
                       <div>Number Of Rooms : {offer.rooms}</div>
                       <div>Price : {offer.price} EUR</div>
                       <div>{offer.location}</div>
-                      <Tag className="mt-2" color="green">
+                      <Tag style={{marginTop:"0.5rem"}} color="green">
                         Top Offer!
                       </Tag>
                     </div>
@@ -53,6 +53,27 @@ export default function TopOffers() {
             </div>
           ))}
         </Carousel>
+      </div>
+      <div className='on-large'>
+
+        {topOffers.map((offer) => (
+            <div key={offer} className='box'>
+                <div className="image">
+                    <Image preview={false} key={offer.id} src={offer.image} alt="img" className="image-offer" />
+                </div>
+                <div className='offer-info'>
+                <div className='offer-title'>{offer.title}</div>
+                <div className='offer-details'>{offer.details}</div>
+                <div className='offer-other'>Number Of Rooms : {offer.rooms}</div>
+                <div className='offer-other' >Price : {offer.price} EUR</div>
+                <div  className='offer-other'>{offer.location}</div>
+                <Tag className='tag' color="green">
+                    Top Offer!
+                </Tag>
+                </div>
+            </div>
+        ))}
+
       </div>
     </div>
   );

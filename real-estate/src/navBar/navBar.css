@@ -42,6 +42,9 @@ header {
   cursor: pointer;
   margin-left: 5vw !important;
 }
+.cursor-pointer{
+  cursor: pointer;
+}
 
 .nav-button-close {
   padding: 5px;

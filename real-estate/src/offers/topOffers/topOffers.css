@@ -5,6 +5,13 @@
 :root {
   --background: rgba(0, 34, 68, 0.05);
 }
+.on-large{
+  display: none;
+}
+
+.tag{
+  margin-top: 0.5rem;
+}
 
 .top-off-main {
   display: flex;
@@ -66,6 +73,7 @@
   border-radius: 1rem;
 }
 .slick-dots.slick-dots-bottom button {
+  margin-top: 1.20rem;
   background-color: red !important;
 }
 @media screen and (min-width: 600px) {
@@ -73,20 +81,67 @@
     height: auto !important;
     padding: 1.25rem;
   }
+
 }
-@media screen and (min-width: 950px) {
-  .offer-box {
-    /*width: 50vw ;*/
+@media screen and (min-width: 960px) {
+
+  .on-mobile{
+    display: none !important;
   }
+
   .top-offer {
     margin-left: 25%;
     margin-right: 25%;
   }
+
   .image-offer {
-    /*width:auto;*/
+    width:auto;
     min-width: 80%;
   }
   .image-offer {
     min-height: 15rem;
+  }
+  .on-large{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    flex-wrap: wrap;
+
+  }
+  .box{
+    background-color: rgba(0, 34, 68, 0.05);
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 1.5rem;
+    height: auto;
+    max-width: 25rem;
+    max-height: 40rem;
+    padding: 0.75rem;
+    border-radius: 1rem;
+  }
+  .image-offer {
+    border-radius: 0.5rem;
+    min-height: 20rem;
+    max-height: 20rem;
+  }
+  .offer-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .tag{
+    margin-top: 1.5rem;
+  }
+
+  .offer-title{
+    font-size: 1.05rem;
+    margin-bottom: 0.25rem;
+  }
+  .offer-details{
+    margin-bottom: 0.25rem;
   }
 }

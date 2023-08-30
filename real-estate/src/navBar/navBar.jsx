@@ -40,9 +40,7 @@ function Navbar() {
           <Link onClick={showNavbar} smooth spy to="aboutUs" className="nav-links cursor-pointer">
             <span className="span-home">About Us</span>
           </Link>
-          <NavLink exact to="/" className="nav-links">
-            <span className="span-home">FAQ</span>
-          </NavLink>
+
           <Button variant="contained" className="contact-now" onClick={showDrawer}>
             Contact Us!
           </Button>
