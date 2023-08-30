@@ -38,11 +38,11 @@ export default function TopOffers() {
                       <div className="image">
                         <Image preview={false} key={offer.id} src={offer.image} alt="img" className="image-offer" />
                       </div>
-                      <div> {offer.title}</div>
-                      <div>{offer.details}</div>
-                      <div>Number Of Rooms : {offer.rooms}</div>
-                      <div>Price : {offer.price} EUR</div>
-                      <div>{offer.location}</div>
+                      <div className='offer-title'> {offer.title}</div>
+                      <div className='offer-details offer-other'>{offer.details}</div>
+                      <div className='offer-other'>Number Of Rooms : {offer.rooms}</div>
+                      <div className='offer-other'>Price : {offer.price} EUR</div>
+                      <div className='offer-other'>{offer.location}</div>
                       <Tag style={{marginTop:"0.5rem"}} color="green">
                         Top Offer!
                       </Tag>
@@ -63,7 +63,7 @@ export default function TopOffers() {
                 </div>
                 <div className='offer-info'>
                 <div className='offer-title'>{offer.title}</div>
-                <div className='offer-details'>{offer.details}</div>
+                <div className='offer-details offer-other'>{offer.details}</div>
                 <div className='offer-other'>Number Of Rooms : {offer.rooms}</div>
                 <div className='offer-other' >Price : {offer.price} EUR</div>
                 <div  className='offer-other'>{offer.location}</div>
