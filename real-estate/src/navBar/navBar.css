@@ -42,7 +42,7 @@ header {
   cursor: pointer;
   margin-left: 5vw !important;
 }
-.cursor-pointer{
+.cursor-pointer {
   cursor: pointer;
 }
 
@@ -56,6 +56,21 @@ header {
   visibility: hidden;
   opacity: 0;
   font-size: 1.2rem;
+}
+.statistics {
+  display: flex;
+  justify-content: space-evenly;
+}
+.statistics-span {
+}
+.profile-div {
+  padding: 1rem;
+}
+.profile {
+  margin-top: 1rem;
+}
+.profile-text {
+  margin-top: 0.5rem;
 }
 .nav-button {
   padding: 5px;
@@ -85,6 +100,8 @@ header {
 }
 .submit {
   display: flex;
+  flex-basis: 100%;
+  flex-direction: column;
   justify-content: center;
 }
 @media only screen and (max-width: 950px) {

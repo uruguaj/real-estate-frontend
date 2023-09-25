@@ -5,17 +5,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Signika+Negative&display=swap');
 /*font-family: 'Signika Negative', sans-serif;*/
 
-.haha{
+.haha {
   border: none;
   background-color: transparent;
 }
-.home-content-title , .text-xl {
+.home-content-title,
+.text-xl {
   margin-top: 1.25rem;
   font-size: 1.25rem;
   font-family: 'Source Code Pro', monospace;
 }
 .ant-btn-primary {
-  margin-left: 0!important;
+  margin-left: 0 !important;
   border: none !important;
 }
 

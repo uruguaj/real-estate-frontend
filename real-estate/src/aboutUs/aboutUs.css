@@ -9,7 +9,7 @@
   align-items: center;
 }
 
-.about-avatar{
+.about-avatar {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -39,16 +39,16 @@
   margin-top: 1rem;
 }
 
-@media screen and (min-width: 950px){
-
-  .owners{
+@media screen and (min-width: 950px) {
+  .owners {
     flex-direction: row;
     display: flex;
     max-width: 100vw;
     flex-wrap: wrap;
   }
-  .owner , .owner2{
+  .owner,
+  .owner2 {
     border-radius: 1.5rem;
-    flex:1;
+    flex: 1;
   }
 }

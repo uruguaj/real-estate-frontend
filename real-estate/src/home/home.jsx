@@ -2,8 +2,7 @@ import './home.css';
 import React, { useState } from 'react';
 import { Button, Input, Select, Space } from 'antd';
 import ReactTypingEffect from 'react-typing-effect';
-import { motion } from "framer-motion";
-
+import { motion } from 'framer-motion';
 
 export default function Home() {
   const handleChange = () => {};
@@ -28,14 +27,12 @@ export default function Home() {
   return (
     <div className="home">
       <div className="home-title-div">
-          <h1 className='text-xl'>
-            <ReactTypingEffect
-            text={["Modern living for Everyone!"]}
-        />
-          </h1>
+        <h1 className="text-xl">
+          <ReactTypingEffect text={['Modern living for Everyone!']} />
+        </h1>
       </div>
       <div className="search">
-          <Select
+        <Select
           mode="multiple"
           placeholder="Select Type of Property"
           onChange={handleChange}
@@ -49,14 +46,14 @@ export default function Home() {
               value: 'villa',
               label: 'Villa',
             },
-              {
-                  value: 'house',
-                  label: 'House',
-              },
-              {
-                  value: 'penthouse',
-                  label: 'Penthouse',
-              },
+            {
+              value: 'house',
+              label: 'House',
+            },
+            {
+              value: 'penthouse',
+              label: 'Penthouse',
+            },
           ]}
         />
         <Select
@@ -77,22 +74,22 @@ export default function Home() {
               value: '3',
               label: '3',
             },
-              {
-                  value: '4',
-                  label: '4',
-              },
-              {
-                  value: '5',
-                  label: '5',
-              },
-              {
-                  value: '6',
-                  label: '6',
-              },
-              {
-                  value: '7',
-                  label: '7',
-              },
+            {
+              value: '4',
+              label: '4',
+            },
+            {
+              value: '5',
+              label: '5',
+            },
+            {
+              value: '6',
+              label: '6',
+            },
+            {
+              value: '7',
+              label: '7',
+            },
           ]}
         />
 
@@ -110,19 +107,18 @@ export default function Home() {
               value: 'downtown',
               label: 'Downtown',
             },
-              {
-                  value: 'marina',
-                  label: 'Marina',
-              },
-              {
-                  value: 'jbr',
-                  label: 'JBR',
-              },
+            {
+              value: 'marina',
+              label: 'Marina',
+            },
+            {
+              value: 'jbr',
+              label: 'JBR',
+            },
           ]}
         />
 
         <div className="price">
-
           <Space>
             <Space.Compact className="select-price">
               <Input
@@ -141,19 +137,16 @@ export default function Home() {
               />
             </Space.Compact>
           </Space>
-            <motion.button whileHover={{ scale: 1.15 }} whileTap={{ scale: 0.8 }}  className='haha'>
-                <Button type="primary" className="search-button">
-
-                    Search!
-                </Button>
-            </motion.button>
-
-
+          <motion.button whileHover={{ scale: 1.15 }} whileTap={{ scale: 0.8 }} className="haha">
+            <Button type="primary" className="search-button">
+              Search!
+            </Button>
+          </motion.button>
         </div>
       </div>
 
       <div className="home-content">
-        <img alt="property" src="./propety.jpeg" />
+        <img alt="property" src="./propety.jpeg" loading="lazy" />
         <div className="home-text">
           <h2 className="home-content-title">We are dubai estate!</h2>
           <span className="home-content-span">

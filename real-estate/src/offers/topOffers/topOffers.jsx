@@ -1,5 +1,5 @@
 import NavBar from '../../navBar/navBar.jsx';
-import {Button, Carousel, Divider, Image, Tag} from 'antd';
+import { Button, Carousel, Divider, Image, Tag } from 'antd';
 import axios from 'axios';
 import './topOffers.css';
 import { useEffect, useState } from 'react';
@@ -30,20 +30,27 @@ export default function TopOffers() {
       <div className="top-off on-mobile">
         <Carousel autoplay>
           {topOffers.map((offer) => (
-            <div key={offer} className="box-back">
+            <div key={offer.id} className="box-back">
               <div className="box-front-holder">
                 <div style={contentStyle} className="box-front">
                   <div className="top-offer">
                     <div className="offer-box">
                       <div className="image">
-                        <Image preview={false} key={offer.id} src={offer.image} alt="img" className="image-offer" />
+                        <Image
+                          preview={false}
+                          key={offer.id}
+                          src={offer.image}
+                          alt="img"
+                          className="image-offer"
+                          loading="lazy"
+                        />
                       </div>
-                      <div className='offer-title'> {offer.title}</div>
-                      <div className='offer-details offer-other'>{offer.details}</div>
-                      <div className='offer-other'>Number Of Rooms : {offer.rooms}</div>
-                      <div className='offer-other'>Price : {offer.price} EUR</div>
-                      <div className='offer-other'>{offer.location}</div>
-                      <Tag style={{marginTop:"0.5rem"}} color="green">
+                      <div className="offer-title"> {offer.title}</div>
+                      <div className="offer-details offer-other">{offer.details}</div>
+                      <div className="offer-other">Number Of Rooms : {offer.rooms}</div>
+                      <div className="offer-other">Price : {offer.price} EUR</div>
+                      <div className="offer-other">{offer.location}</div>
+                      <Tag style={{ marginTop: '0.5rem' }} color="green">
                         Top Offer!
                       </Tag>
                     </div>
@@ -54,26 +61,24 @@ export default function TopOffers() {
           ))}
         </Carousel>
       </div>
-      <div className='on-large'>
-
+      <div className="on-large">
         {topOffers.map((offer) => (
-            <div key={offer} className='box'>
-                <div className="image">
-                    <Image preview={false} key={offer.id} src={offer.image} alt="img" className="image-offer" />
-                </div>
-                <div className='offer-info'>
-                <div className='offer-title'>{offer.title}</div>
-                <div className='offer-details offer-other'>{offer.details}</div>
-                <div className='offer-other'>Number Of Rooms : {offer.rooms}</div>
-                <div className='offer-other' >Price : {offer.price} EUR</div>
-                <div  className='offer-other'>{offer.location}</div>
-                <Tag className='tag' color="green">
-                    Top Offer!
-                </Tag>
-                </div>
+          <div key={offer} className="box">
+            <div className="image">
+              <Image preview={false} key={offer.id} src={offer.image} alt="img" className="image-offer" />
             </div>
+            <div className="offer-info">
+              <div className="offer-title">{offer.title}</div>
+              <div className="offer-details offer-other">{offer.details}</div>
+              <div className="offer-other">Number Of Rooms : {offer.rooms}</div>
+              <div className="offer-other">Price : {offer.price} EUR</div>
+              <div className="offer-other">{offer.location}</div>
+              <Tag className="tag" color="green">
+                Top Offer!
+              </Tag>
+            </div>
+          </div>
         ))}
-
       </div>
     </div>
   );
