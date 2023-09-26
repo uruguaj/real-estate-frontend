@@ -18,7 +18,7 @@ export default function TopOffers() {
       const filteredOffers = res.data.filter((offer) => offer.tag === 'top');
       setTopOffers(filteredOffers);
     });
-  }, [topOffers]);
+  }, []); //topOffers
 
   return (
     <div className="top-offer-main-div">
@@ -63,7 +63,7 @@ export default function TopOffers() {
       </div>
       <div className="on-large">
         {topOffers.map((offer) => (
-          <div key={offer} className="box">
+          <div key={offer.id} className="box">
             <div className="image">
               <Image preview={false} key={offer.id} src={offer.image} alt="img" className="image-offer" />
             </div>
