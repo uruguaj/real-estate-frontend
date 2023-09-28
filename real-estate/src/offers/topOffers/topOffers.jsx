@@ -18,7 +18,7 @@ export default function TopOffers() {
       const filteredOffers = res.data.filter((offer) => offer.tag === 'top');
       setTopOffers(filteredOffers);
     });
-  }, []); //topOffers
+  }, [topOffers]); //topOffers
 
   return (
     <div className="top-offer-main-div">
